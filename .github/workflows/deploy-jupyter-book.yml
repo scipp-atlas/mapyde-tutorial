@@ -9,7 +9,7 @@ on:
 
 jobs:
 
-  deploy-book:
+  prepare-book:
     runs-on: ubuntu-latest
     container: atlasamglab/stats-base:root6.26.10-python3.10
 
@@ -35,14 +35,19 @@ jobs:
       run: |
         jupyter-book build book/
 
-    - name: Deploy Jupyter book to GitHub pages
-      # Deploy either on push events (merged PRs) or workflow dispatch triggers
-      if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: book/_build/html
-        force_orphan: true
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: Deploy to GitHub pages
+        path: book/_build/html/
+
+  deploy:
+    if: (github.event_name != 'pull_request' && github.ref == 'refs/heads/main')
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: prepare_website
+    steps:
+    - name: Deploy Jupyter book to GitHub pages
+        id: deployment
+        uses: actions/deploy-pages@v1
