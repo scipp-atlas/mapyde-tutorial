@@ -2,7 +2,7 @@
 
 Tutorial given at the [Reinterpretation Forum 2022](https://indico.cern.ch/event/1197680/).
 
-**The tutorial is based off of [`mapyde` `v0.4.3`](https://pypi.org/project/mapyde/0.4.3/)**
+**The tutorial is based off of [`mapyde` `v0.4.4`](https://pypi.org/project/mapyde/0.4.4/)**
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/scipp-atlas/mapyde-tutorial-rif2022/main?urlpath=lab)
 FIXME: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4670321.svg)](https://doi.org/10.5281/zenodo.4670321)

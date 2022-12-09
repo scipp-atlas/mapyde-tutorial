@@ -3,12 +3,12 @@
 ## Welcome!
 
 <p align="center">
-<a href="https://github.com/scipp-atlas/mario-mapyde"><img src="https://raw.githubusercontent.com/scipp-atlas/mario-mapyde/main/docs/assets/images/logo.svg" alt="Mapyde logo" width="300" role="img" align="left" hspace="25">
+<a href="https://github.com/scipp-atlas/mapyde"><img src="https://raw.githubusercontent.com/scipp-atlas/mapyde/main/docs/assets/images/logo.svg" alt="Mapyde logo" width="300" role="img" align="left" hspace="25">
 </a>
 </p>
 
 Welcome to the `mapyde` tutorial!
-We'll first point you towards our documentation website ([scipp-atlas.github.io/mario-mapyde](https://scipp-atlas.github.io/mario-mapyde/)) and recommend that you visit it for much more detailed explanations and examples.
+We'll first point you towards our documentation website ([scipp-atlas.github.io/mapyde](https://scipp-atlas.github.io/mapyde/)) and recommend that you visit it for much more detailed explanations and examples.
 Let's dive right in.
 
 
@@ -116,6 +116,6 @@ If you want to also get the dependencies to build and explore the Jupyter Book f
 
 ### Questions and Further Information on `mapyde`
 
-For more information on `mapyde` please check the [documentation website](https://scipp-atlas.github.io/mario-mapyde).
-Additionally, if you have a question about the use of `mapyde` not covered in the documentation, please ask a question the `mapyde` [GitHub Discussions](https://github.com/scipp-atlas/mario-mapyde/discussions).
-If you believe you have found a bug in `mapyde`, please report it in the [GitHub Issues](https://github.com/scipp-atlas/mario-mapyde/issues/new?template=Bug-Report.md&labels=bug&title=Bug+Report+:+Title+Here).
+For more information on `mapyde` please check the [documentation website](https://scipp-atlas.github.io/mapyde).
+Additionally, if you have a question about the use of `mapyde` not covered in the documentation, please ask a question the `mapyde` [GitHub Discussions](https://github.com/scipp-atlas/mapyde/discussions).
+If you believe you have found a bug in `mapyde`, please report it in the [GitHub Issues](https://github.com/scipp-atlas/mapyde/issues/new?template=Bug-Report.md&labels=bug&title=Bug+Report+:+Title+Here).
