@@ -46,7 +46,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: prepare_website
+    needs: prepare-book
     steps:
       - name: Deploy Jupyter book to GitHub pages
         id: deployment
