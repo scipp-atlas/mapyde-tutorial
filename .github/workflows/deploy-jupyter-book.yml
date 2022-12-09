@@ -11,7 +11,6 @@ jobs:
 
   prepare-book:
     runs-on: ubuntu-latest
-    container: atlasamglab/stats-base:root6.26.10-python3.10
 
     steps:
     - uses: actions/checkout@v3
