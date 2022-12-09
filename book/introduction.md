@@ -26,19 +26,20 @@ Instead, let's move to looking at the `mapyde` CLI right away.
 
 ### Make a Virtual Environment
 
-````{tabbed} Locally
-```
+`````{tab-set}
+````{tab-item} Locally
+```{code-block} bash
 $ python3 -m venv mapyde-tutorial
 $ source mapyde-tutorial/bin/activate
 (mapyde-tutorial) $ python -m pip install -U pip setuptools wheel
 ```
 ````
 
-````{tabbed} On CC7 lxplus/tier-3
+````{tab-item} On CC7 lxplus/tier-3
 
 First we need to set up the 'views' with the right paths to ensure we use the correct `pip`
 
-```
+```{code-block} bash
 $ export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 $ source $ATLAS_LOCAL_ROOT_BASE/user/atlasLocalSetup.sh
 $ lsetup "views LCG_98python3 x86_64-centos7-gcc8-opt"
@@ -47,18 +48,18 @@ $ export PYTHONPATH=/cvmfs/sft.cern.ch/lcg/views/LCG_98python3/x86_64-centos7-gc
 
 Then we can go ahead and create the virtual environment
 
-```
+```{code-block} bash
 $ python3 -m venv mapyde-tutorial
 $ source mapyde-tutorial/bin/activate
 (mapyde-tutorial) $ python -m pip install -U pip setuptools wheel
 ```
 ````
 
-````{tabbed} On SLC6 lxplus/tier-3
+````{tab-item} On SLC6 lxplus/tier-3
 
 First we need to set up the 'views' with the right paths to ensure we use the correct `pip`
 
-```
+```{code-block} bash
 $ export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 $ source $ATLAS_LOCAL_ROOT_BASE/user/atlasLocalSetup.sh
 $ lsetup "views LCG_98python3 x86_64-slc6-gcc8-opt"
@@ -67,29 +68,37 @@ $ export PYTHONPATH=/cvmfs/sft.cern.ch/lcg/views/LCG_98python3/x86_64-slc6-gcc8-
 
 Then we can go ahead and create the virtual environment
 
-```
+```{code-block} bash
 $ python3 -m venv mapyde-tutorial
 $ source mapyde-tutorial/bin/activate
 (mapyde-tutorial) $ python -m pip install -U pip setuptools wheel
 ```
 ````
 
+`````
+
 Once you have a virtual environment set up, you can use `source mapyde-tutorial/bin/activate` to get back into it again. Note the prefix `(mapyde-tutorial) $` on your command line, which indicates that you're inside a virtual environment named 'mapyde-tutorial'.
 
 ### Getting mapyde
 
-If you haven't already, make a new Python 3 virtual environment and then install `mapyde` from either [PyPI](https://pypi.org/project/mapyde/) with `pip`
+If you haven't already, make a new Python 3 virtual environment and then install `mapyde` from either [PyPI](https://pypi.org/project/mapyde/) with `pip` or [conda-forge](https://anaconda.org/conda-forge/pyhf) with `conda`.
 
-```
+`````{tab-set}
+
+````{tab-item} pypi
+```{code-block} bash
 (mapyde-tutorial) $ python -m pip install mapyde
 ```
+````
 
- or [Conda-forge](https://anaconda.org/conda-forge/mapyde)
-
-```
+````{tab-item} conda-forge
+```{code-block} bash
 (mapyde-tutorial) $ conda config --add channels conda-forge
 (mapyde-tutorial) $ conda install mapyde
 ```
+````
+
+`````
 
 ### Dependencies for this tutorial
 
