@@ -2,7 +2,7 @@
 # Book settings
 title: 'mapyde Tutorial'
 author: the mapyde development team
-logo: https://raw.githubusercontent.com/scipp-atlas/mario-mapyde/main/docs/assets/images/logo.svg
+logo: assets/logo.svg
 
 # HTML-specific settings
 html:
