@@ -1,0 +1,6 @@
+mapyde==0.4.3
+uproot==4.3.7
+# jupyter notebooks
+jupyter
+jupyterlab
+ipython!=8.7.0
