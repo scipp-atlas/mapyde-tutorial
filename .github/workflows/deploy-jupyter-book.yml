@@ -48,6 +48,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: prepare_website
     steps:
-    - name: Deploy Jupyter book to GitHub pages
+      - name: Deploy Jupyter book to GitHub pages
         id: deployment
         uses: actions/deploy-pages@v1
