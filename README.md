@@ -1,4 +1,4 @@
-# `mapyde` Tutorial
+# `mapyde` Tutorial (0.0.0)
 
 Tutorial given at the [Reinterpretation Forum 2022](https://indico.cern.ch/event/1197680/).
 
