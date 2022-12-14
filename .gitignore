@@ -133,3 +133,5 @@ _build
 *.tar.gz
 book/data/
 .DS_Store
+book/tutorial.toml
+book/tutorial/
