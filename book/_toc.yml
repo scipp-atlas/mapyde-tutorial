@@ -5,3 +5,4 @@ parts:
 - caption: Get started
   chapters:
   - file: HelloWorld
+  - file: RealWorldExample
