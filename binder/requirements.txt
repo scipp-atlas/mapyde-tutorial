@@ -1,4 +1,4 @@
-mapyde==0.4.4
+mapyde==0.4.5
 uproot==4.3.7
 # jupyter notebooks
 jupyter
