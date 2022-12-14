@@ -1,0 +1,11 @@
+[base]
+path = "{{PWD}}"
+output = "SUSY_SleptonBino_isrslep_100_99"
+template = "{{PWD}}/data/sleptons.toml"
+
+[madgraph.masses]
+MSLEP = 100
+MN1 = 99
+
+[pythia]
+mpi = "off" # turn it 'on' for better modeling, but slower

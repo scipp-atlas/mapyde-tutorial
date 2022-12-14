@@ -1,0 +1,8 @@
+[base]
+path = "{{PWD}}"
+output = "SUSY_SleptonBino_isrslep_250_249"
+template = "{{PWD}}/data/sleptons.toml"
+
+[madgraph.masses]
+MSLEP = 250
+MN1 = 249
