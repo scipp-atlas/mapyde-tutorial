@@ -21,12 +21,12 @@ repos:
     - id: trailing-whitespace
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.8.0
+    rev: v3.13.0
     hooks:
     -   id: pyupgrade
 
 -   repo: https://github.com/psf/black
-    rev: 23.3.0
+    rev: 23.9.1
     hooks:
     - id: black-jupyter
 
