@@ -34,7 +34,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip setuptools wheel
         python -m pip --no-cache-dir install -r binder/requirements.txt
-        python -m pip --no-cache-dir install -r book/requirements.txt
+        python -m pip install --no-deps --require-hashes --requirement book/requirements.lock
 
     - name: List installed Python packages
       run: |
